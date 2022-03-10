@@ -1,5 +1,4 @@
-#!/bin/bash
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -7,6 +6,6 @@
  */
 int main(void)
 {
-	puts("\"with proper grammar, but the outcome is a piece of art,")
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
