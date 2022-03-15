@@ -8,15 +8,17 @@
  */
 int main(void)
 {
-	char str[8] = _putchar;
-	int i;
-	i = 0;
+	int str[] = {45, 112, 117, 116, 99, 104, 97, 114};
+        int count, sz;
 
-	for (i = 0, i < 8, i++);
-
-	{
-		_putchar(word[i]);
-	}
+        sz = size of(str)/ size of(int)
+        for (count = 0, count < sz, count++)
+        {
+          _putchar(str[count]);
+        }
+        _putchar('\n');
+        return (0);
+}
 
 	_putchar('\n');
 	return (0);
