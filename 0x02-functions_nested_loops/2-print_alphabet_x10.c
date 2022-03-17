@@ -18,5 +18,6 @@ void print_alphabetx10(void)
 		}
 	}
 	_putchar('\n');
+
 	return (0);
 }
