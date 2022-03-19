@@ -1,35 +1,29 @@
-#include <stdlib.h>
-#include "main.h"
+#include <stdlib>
+include "main.h"
 
 /**
  * main - prints Buzz each numbers of 3 and 5.
  * Return: Always 0.
  */
-int main(void)
-{
-	int n;
+int i, n ;
+    printf("Enter the number :");
+    scanf("%d", &n);
+    for (i=1; i<=n; i++)
+    {
+// number divisible by 3 and 5 will always be divisible by 15, print 'FizzBuzz' in place of the number
+        if (i%15 == 0)
+            printf ("FizzBuzz\t");
 
-	n = 1;
-	printf("%d", n);
-	for (n = 2; n <= 100; n++)
-	{
-		if ((n % 3 == 0) && (n % 5 == 0))
-		{
-			printf(" FizzBuzz");
-		}
-		else if (n % 3 == 0)
-		{
-			printf(" Fizz");
-		}
-		else if (n % 5 == 0)
-		{
-			printf(" Buzz");
-		}
-		else
-		{
-			printf(" %d", n);
-		}
-	}
-	printf("\n");
-	return (0);
+// number divisible by 3, print 'Fizz' in place of the number
+        else if ((i%3) == 0)
+            printf("Fizz\t");
+
+// number divisible by 5, print 'Buzz' in place of the number
+        else if ((i%5) == 0)
+            printf("Buzz\t");
+
+        else // print the number
+            printf("%d\t", i);
+    }
+    return 0;
 }
