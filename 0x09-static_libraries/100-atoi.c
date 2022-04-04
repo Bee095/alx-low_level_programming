@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _atoi - int
  * @s: pointer
